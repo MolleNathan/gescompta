@@ -1,0 +1,45 @@
+APPLICATION DE GESTION DE LA FACTURATION
+L’objectif est de créer une application de gestion de la facturation entre clients et fournisseurs de produits hi-tech.
+
++   Le client a les attributs suivants : un email qui sert de login,un nom, un prénom, une date de naissance,
++   un mot de passe alphanumérique (minuscule, majuscule, chiffre, caractère spécial),
++   une adresse de facturation qui est obligatoirement l’adresse de livraison).
+ Le client peut être une entreprise.
+
++   Les produits hi-tech sont définis par un identifiant fonctionnel,
++   un nom,
++   un prix en euros et
++   un descriptif complet composé informations générales (nom, catégorie, marque, prix TTC en euros),
++   des informations techniques ( capacité memoire, fréquence de rafraichissement, durée d’autonomie, compatibilités OS, interfaces)
++   et des informations commerciales (garantie en années, mail de contact SAV, adresse de retour).
+
+   Ces produits sont fabriqués uniquement par 2 entreprises.
+
+
+
+Les prix sont affichés en TTC.
+S
+ur les devis, factures et avoirs, la TVA devra apparaitre.
+
+
+Chaque client peut faire une commande et payer, demander un devis ou faire objet d’un remboursement.
+
+1 -
+
++   2 - Créer le modèle de données à manipuler et stocker dans une base de données MongoDb
+
++   3- Avec Express, créer les routes des API permettant de manipuler les schémas via les opérations CRUD
+( aucune données n’est supprimée, une simple désactivation en lecture sert de suppression au niveau fonctionnel)
+
+4- Créer une API d’authentification des clients afin de réaliser les commandes
+
+5 - Générer le fichier PDF, téléchargeable via navigateur, d’un devis, d’une facture et d’un avoir via une API
+6- implementer un interface utilisateur avec des templates html5, une mise avec less utilisant les API pour
+ s’authentifier
+ visualiser les produits hi-tech
+ commander et visualiser sa facture
+7- Réaliser les tests unitaires sur l’API
+
+
+
+
